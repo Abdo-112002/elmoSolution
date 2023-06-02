@@ -1,0 +1,16 @@
+// import abstracts file
+@import "./abstracts/vars", "./abstracts/mixin", "./abstracts/functions";
+
+// import base fils
+@import "./base/base", "./base/helper";
+
+// import components fils
+// @import "./components/title", "./components/animations", "./components/buttons",
+//     "./components/banner", "./components/subMainSection";
+
+// import pages fils
+@import "./pages/home";
+
+
+// import layout fils
+@import "./layout/header", "./layout/footer";

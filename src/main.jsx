@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./i18n";
 import App from "./App.jsx";
-import "./index.css";
+import "./styles/main.scss";
 
 // Dependency
 import { ChakraProvider } from "@chakra-ui/react";
