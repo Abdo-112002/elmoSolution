@@ -1,7 +1,13 @@
 
 
-// import Test from './Test';
+import NavBar from './NavBar';
+import MainSection from './MainSection';
+import UpToPage from './UpToPage';
+import AboutUs from './AboutUs';
 
-// export {
-//     Test
-// }
+export {
+    NavBar,
+    MainSection,
+    AboutUs,
+    UpToPage
+}

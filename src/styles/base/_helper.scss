@@ -33,31 +33,13 @@
     margin: 80px 0px;
 }
 
-// .container {
-//     display: block;
-//     width: 85%;
-//     height: 100%;
-//     margin: auto;
+.container {
+    display: block;
+    width: 87%;
+    height: 100%;
+    margin: auto;
 
-//     @include devices(mobile) {
-//         width: 90%;
-//     }
-// }
-
-// .box {
-//     width: calc((100% / 2) - 20px);
-//     // border: 1px solid hotpink;
-//     @include devices(tablet) {
-//         width: calc((100% / 1) - 0px);
-//     }
-//     // @include devices(mobile) {
-//     //     width: calc((100% / 1) - 0px);
-//     // }
-// }
-
-// .active {
-//        &>a {
-//         color: $activeColor !important;
-//         font-weight: bold;
-//        }
-// }
+    @include devices(mobile) {
+        width: 90%;
+    }
+}

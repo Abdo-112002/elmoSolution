@@ -5,12 +5,10 @@
 @import "./base/base", "./base/helper";
 
 // import components fils
-// @import "./components/title", "./components/animations", "./components/buttons",
-//     "./components/banner", "./components/subMainSection";
+@import "./components/animations", "./components/upToPage", "./components/title";
 
 // import pages fils
-@import "./pages/home";
-
+@import "./pages/home", "./pages//about";
 
 // import layout fils
 @import "./layout/header", "./layout/footer";

@@ -10,11 +10,9 @@
 
 body {
     position: relative;
-    // font-family: $main-font1;
-    // font-family: $main-font2;
-    // font-family: $main-font3;
-    // background-color: $bodyBgColor;
+    font-family: $main-font1;
     overflow-x: hidden;
+    height: 2000px;
 }
 
 html {
@@ -22,8 +20,8 @@ html {
 }
 
 html::selection {
-    // color: $secondBgColor;
-    // background: $mainTextColor;
+    color: $secondBgColor;
+    background: $mainHeaderColor;
 }
 
 ul {
@@ -33,13 +31,12 @@ ul {
 }
 
 a {
-    // @include reSetting-a(16px, $mainHeaderColor);
+    @include reSetting-a(15px, $mainHeaderColor);
 }
 
 p {
     font-size: 18px;
     word-spacing: 1.5px;
-    // color: $textSiblingColor;
     text-transform: capitalize;
 }
 

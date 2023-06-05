@@ -1,0 +1,68 @@
+.aboutUs {
+    padding-block-start: 50px;
+    // background: $textSiblingColor;
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: 82%;
+        @include bg-img("../public/images/LIKE843i.png");
+    }
+
+    &__content {
+        flex: 1;
+        @include devices("tablet") {
+            flex-basis: 100%;
+            order: 1;
+        }
+        .title {
+            text-align: left;
+            max-width: 580px;
+        }
+        &--item {
+            display: flex;
+            align-items: start;
+            gap: 30px;
+            .icon img {
+                width: 100px;
+            }
+            .itemTitle {
+                text-transform: capitalize;
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 10px;
+                color: $blackColor;
+            }
+            .itemDesc {
+                color: $textColor;
+                font-size: 16px;
+                line-height: 2;
+            }
+        }
+    }
+    &__img {
+        flex: 1;
+        position: relative;
+        @include devices("tablet") {
+            flex-basis: 100%;
+            order: 2;
+            margin-top: 30px;
+        }
+        .aboutImg {
+            width: 600px;
+            position: relative;
+            z-index: 2;
+        }
+        .imgAnimation {
+            position: absolute;
+            top: 40%;
+            left: 55%;
+            z-index: 1;
+            width: 450px;
+        }
+    }
+}

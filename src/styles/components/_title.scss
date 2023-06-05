@@ -1,0 +1,13 @@
+.baseTitle {
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        color: $blackColor;
+        &::before {
+            content: attr(data-subtitle);
+            font-size: 15px;
+            display: block;
+            color: $mainColor;
+        }
+    }
+}

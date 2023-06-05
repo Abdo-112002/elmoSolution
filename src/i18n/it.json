@@ -1,3 +1,12 @@
 {
-    "title": "chow"
+    "navHome": "casa",
+    "navAboutUs": "chi siamo",
+    "navServices": "servizi",
+    "navTechnology": "della tecnologia",
+    "navProjects": "progetti",
+    "navContactUs": "Contattaci",
+    "heroTitle1": "Eseguire i seguenti passaggi con",
+    "heroTitle2": "per lo sviluppo software.",
+    "heroDesc": "Forniamo l'IT più reattivo e funzionale",
+    "readMore": "Per saperne di più"
 }
