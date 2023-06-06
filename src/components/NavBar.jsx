@@ -2,24 +2,36 @@ import React, { useCallback, useEffect, useState } from "react";
 import { Logo } from "../reUseComponents";
 import { logoImg, amirican, italy } from "../assets";
 import { useTranslation } from "react-i18next";
-import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleLangFun, toggleNavFun } from "../store/reducers/Toggle";
+
+// icons
+import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { VscListSelection } from "react-icons/vsc";
 
 function NavBar() {
     const [t, i18n] = useTranslation();
-    const [lang, setLang] = useState(false);
+    const dispatch = useDispatch();
+    const { toggleLang, toggleNav } = useSelector((state) => state.toggleMode);
+
+    // for framer motion animations
     const [navStyle, setNavStyle] = useState({
         initial: {},
         animate: {},
     });
 
+    const toggleMenu = () => {
+        dispatch(toggleNavFun());
+    };
+
     const toggleLanguage = useCallback(
         (language) => {
-            setLang(!lang);
+            dispatch(toggleLangFun(language));
             i18n.changeLanguage(language);
             localStorage.setItem("lang", language);
         },
-        [lang, i18n]
+        [i18n, dispatch]
     );
 
     const handleScroll = useCallback(() => {
@@ -60,12 +72,12 @@ function NavBar() {
 
     useEffect(() => {
         const getLang = localStorage.getItem("lang");
-        setLang(getLang == "en" ? false : true);
+        dispatch(toggleLangFun(getLang));
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, [handleScroll]);
+    }, [dispatch, handleScroll]);
 
     return (
         <motion.header
@@ -77,7 +89,11 @@ function NavBar() {
             <div className="container">
                 <div className="flex items-center justify-between flex-wrap">
                     <Logo src={logoImg} />
-                    <div className="navWrapper flex items-center justify-between gap-10">
+                    <div
+                        className={`navWrapper flex items-center justify-between gap-10 ${
+                            toggleNav ? "open" : null
+                        }`}
+                    >
                         <nav className="header__nav flex items-center gap-10 flex-wrap">
                             <a
                                 href="#"
@@ -112,16 +128,21 @@ function NavBar() {
                             </div>
                             <div
                                 onClick={() =>
-                                    toggleLanguage(lang ? "en" : "it")
+                                    toggleLanguage(
+                                        toggleLang === "en" ? "it" : "en"
+                                    )
                                 }
                             >
                                 <img
                                     className="w-10 cursor-pointer"
-                                    src={lang ? amirican : italy}
+                                    src={toggleLang === "en" ? italy : amirican}
                                     alt="languageIcons"
                                 />
                             </div>
                         </div>
+                    </div>
+                    <div className="header__menu" onClick={toggleMenu}>
+                        <VscListSelection size={"30"} />
                     </div>
                 </div>
             </div>

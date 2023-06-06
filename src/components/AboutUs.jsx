@@ -10,7 +10,7 @@ import {
 } from "../assets";
 function AboutUs() {
     return (
-        <div className="aboutUs" id="aboutUs">
+        <section className="aboutUs" id="aboutUs">
             <div className="container">
                 <div className="flex justify-between flex-wrap gap-4">
                     <div className="aboutUs__img">
@@ -28,7 +28,7 @@ function AboutUs() {
                             }}
                             transition={{
                                 repeat: Infinity,
-                                duration: 5,
+                                duration: 10,
                                 ease: "linear",
                             }}
                             src={aboutImgLoop}
@@ -43,7 +43,7 @@ function AboutUs() {
                                 success
                             </h2>
                         </div>
-                        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+                        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
                             <div
                                 data-aos="fade-right"
                                 className="aboutUs__content--item"
@@ -67,7 +67,9 @@ function AboutUs() {
                                     <img src={aboutIcon2} alt="aboutIcon" />
                                 </div>
                                 <div>
-                                    <h2 className="itemTitle">Expert Team</h2>
+                                    <h2 className="itemTitle">
+                                        Quality Control
+                                    </h2>
                                     <p className="itemDesc">
                                         Accelerate innovation with world-class
                                         tech teams
@@ -82,7 +84,7 @@ function AboutUs() {
                                     <img src={aboutIcon3} alt="aboutIcon" />
                                 </div>
                                 <div>
-                                    <h2 className="itemTitle">Expert Team</h2>
+                                    <h2 className="itemTitle">Integration</h2>
                                     <p className="itemDesc">
                                         Accelerate innovation with world-class
                                         tech teams
@@ -97,7 +99,7 @@ function AboutUs() {
                                     <img src={aboutIcon4} alt="aboutIcon" />
                                 </div>
                                 <div>
-                                    <h2 className="itemTitle">Expert Team</h2>
+                                    <h2 className="itemTitle">24/7 Support</h2>
                                     <p className="itemDesc">
                                         Accelerate innovation with world-class
                                         tech teams
@@ -108,7 +110,7 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

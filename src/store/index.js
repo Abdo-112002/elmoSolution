@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 // Reducers
-
+import toggleMode from './reducers/Toggle';
 
 // Slices
 
@@ -9,7 +9,7 @@ import { configureStore } from "@reduxjs/toolkit";
 export default configureStore({
     reducer: {
         // Reducers
-
+        toggleMode
         // Slices
     },
 });

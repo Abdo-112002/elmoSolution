@@ -9,6 +9,7 @@ import aboutIcon1 from './images/micon-1.png';
 import aboutIcon2 from './images/micon-2.png';
 import aboutIcon3 from './images/micon-3.png';
 import aboutIcon4 from './images/micon-4.png';
+import elmoTextImg from './images/ElomSolution.png';
 
 export {
     logoImg,
@@ -19,6 +20,7 @@ export {
     aboutIcon2,
     aboutIcon3,
     aboutIcon4,
+    elmoTextImg,
     // for translation language
     amirican,
     italy

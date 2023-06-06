@@ -6,7 +6,6 @@
     background-color: $whiteColor;
     position: sticky;
     top: 0;
-    // box-shadow: 0px -5px 10px 2px rgba(0, 0, 0, 0.3);
 
     &__logo {
         width: 120px;
@@ -24,18 +23,20 @@
             align-items: flex-start;
             justify-content: flex-start;
             position: fixed;
-            top: 0;
+            top: -100vh;
             right: 0;
             bottom: 0;
-            z-index: 10;
+            z-index: 1;
             width: 300px;
             height: 100vh;
             padding: 100px 30px;
+            transition: top 700ms ease-in;
+            transition-delay: 300ms;
             &::before {
                 content: "";
                 position: fixed;
                 top: 0;
-                right: 0;
+                right: -100vw;
                 bottom: 0;
                 width: 100vw;
                 height: 100vh;
@@ -48,12 +49,21 @@
                 content: "";
                 position: fixed;
                 top: 0;
-                right: 0;
+                right: -100vw;
                 bottom: 0;
                 width: 300px;
                 height: 100vh;
                 z-index: -1;
                 background-color: white;
+                transition: all 500ms linear;
+                transition-delay: 550ms;
+            }
+        }
+        &.open {
+            top: 0;
+            &::before,
+            &::after {
+                right: 0;
             }
         }
     }
@@ -102,6 +112,16 @@
             &:hover {
                 color: $mainColor;
             }
+        }
+    }
+
+    &__menu {
+        cursor: pointer;
+        transform: rotate(180deg);
+        display: none;
+        z-index: 10;
+        @include devices("tablet") {
+            display: block;
         }
     }
 }

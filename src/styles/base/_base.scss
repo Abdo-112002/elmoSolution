@@ -11,8 +11,7 @@
 body {
     position: relative;
     font-family: $main-font1;
-    overflow-x: hidden;
-    height: 2000px;
+    overflow-x: hidden !important;
 }
 
 html {
