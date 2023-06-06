@@ -14,6 +14,13 @@ import services4 from './images/automation.png';
 import services3 from './images/042.png';
 import services2 from './images/022.png';
 import services1 from './images/029.png';
+import htmlIcon from './images/html-language.png';
+import pythonIcon from './images/python.png';
+import cIcon from './images/c-.png';
+import javaIcon from './images/java.png';
+import sqlIcon from './images/sql-server.png';
+import phpIcon from './images/php.png';
+import cssIcon from './images/css.png';
 
 export {
     logoImg,
@@ -31,5 +38,13 @@ export {
     services1,
     // for translation language
     amirican,
-    italy
+    italy,
+    // for technology language
+    htmlIcon,
+    cIcon,
+    pythonIcon,
+    javaIcon,
+    sqlIcon,
+    phpIcon,
+    cssIcon,
 }

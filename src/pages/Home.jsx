@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { MainSection, AboutUs, Services } from "../components";
+import { MainSection, AboutUs, Services, OurTechnology } from "../components";
 
 function Home() {
     return (
@@ -10,6 +10,8 @@ function Home() {
             <AboutUs />
             {/* Services section */}
             <Services />
+            {/* OurTechnology section */}
+            <OurTechnology />
         </Box>
     );
 }

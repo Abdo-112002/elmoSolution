@@ -107,7 +107,7 @@ function NavBar() {
                             <a href="#services" className="header__nav--item">
                                 {t("navServices")}
                             </a>
-                            <a href="#" className="header__nav--item">
+                            <a href="#technology" className="header__nav--item">
                                 {t("navTechnology")}
                             </a>
                             <a href="#" className="header__nav--item">
