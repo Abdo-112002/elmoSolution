@@ -96,7 +96,7 @@ function NavBar() {
                     >
                         <nav className="header__nav flex items-center gap-10 flex-wrap">
                             <a
-                                href="#"
+                                href="/"
                                 className="header__nav--item defaultActive"
                             >
                                 {t("navHome")}
@@ -104,7 +104,7 @@ function NavBar() {
                             <a href="#aboutUs" className="header__nav--item">
                                 {t("navAboutUs")}
                             </a>
-                            <a href="#" className="header__nav--item">
+                            <a href="#services" className="header__nav--item">
                                 {t("navServices")}
                             </a>
                             <a href="#" className="header__nav--item">

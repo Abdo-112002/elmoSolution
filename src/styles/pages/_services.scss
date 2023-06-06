@@ -1,0 +1,27 @@
+.services {
+    @include bg-img("../../../public/images/service-bg6.jpg");
+    padding-block: 80px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-self: normal;
+        border-radius: 10px;
+        // box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+        padding: 40px 20px;
+        background: $whiteColor;
+        &--title {
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &--desc {
+            font-weight: normal;
+            font-size: 15px;
+            color: $textColor;
+        }
+        &--icon {
+            width: 100px;
+        }
+    }
+}
