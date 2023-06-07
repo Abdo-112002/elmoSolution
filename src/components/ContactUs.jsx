@@ -9,7 +9,7 @@ function ContactUs() {
         <div className="contactUs" id="contact">
             <div className="container">
                 <div className="contactUs__wrapper">
-                    <div className="flex items-start justify-between sm:gap-7 md:gap-0 flex-wrap">
+                    <div className="flex items-start justify-between gap-7 md:gap-0 flex-wrap">
                         <div className="contactUs__info sm:w-full md:w-1/2">
                             <h2 className="contactUs__info--title">
                                 To make requests for further information,

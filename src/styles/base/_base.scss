@@ -10,8 +10,14 @@
 
 body {
     position: relative;
-    font-family: $main-font1;
-    overflow-x: hidden;
+    font-family: $main-font1 !important;
+    overflow-x: hidden !important;
+    @apply bg-white dark:bg-gray-900 text-black dark:text-white;
+}
+
+// Dark mode styles
+.dark-mode {
+    @apply bg-gray-900 text-white;
 }
 
 html {

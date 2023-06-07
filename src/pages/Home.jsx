@@ -15,10 +15,10 @@ function Home() {
             <MainSection />
             {/* about us section */}
             <AboutUs />
-            {/* Services section */}
-            <Services />
             {/* OurTechnology section */}
             <OurTechnology />
+            {/* Services section */}
+            <Services />
             {/* contact section */}
             <ContactUs />
             {/* Footer section */}

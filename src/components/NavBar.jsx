@@ -90,6 +90,7 @@ function NavBar() {
                 <div className="flex items-center justify-between flex-wrap">
                     <Logo src={logoImg} />
                     <div
+                        onClick={toggleMenu}
                         className={`navWrapper flex items-center justify-between gap-10 ${
                             toggleNav ? "open" : null
                         }`}
