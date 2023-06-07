@@ -1,5 +1,5 @@
 .services {
-    @include bg-img("../../../public/images/service-bg6.jpg");
+    @include bg-img("./public/images/service-bg6.jpg");
     padding-block: 80px;
     &__item {
         display: flex;
