@@ -24,15 +24,15 @@
             align-items: flex-start;
             justify-content: flex-start;
             position: fixed;
-            top: -100vh;
-            right: 0;
+            top: 0;
+            right: -100vw;
             bottom: 0;
             z-index: 1;
             width: 300px;
             height: 100vh !important;
             padding: 100px 30px;
-            transition: top 700ms ease-in;
-            transition-delay: 300ms;
+            transition: right 700ms ease-in;
+            transition-delay: 400ms;
             overflow: hidden;
             &::before {
                 content: "";
@@ -62,7 +62,7 @@
             }
         }
         &.open {
-            top: 0;
+            right: 0;
             &::before,
             &::after {
                 right: 0;
