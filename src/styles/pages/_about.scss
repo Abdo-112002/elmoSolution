@@ -54,11 +54,6 @@
     &__img {
         flex: 1;
         position: relative;
-        @include devices("tablet") {
-            flex-basis: 100%;
-            order: 2;
-            margin-top: 30px;
-        }
         .aboutImg {
             width: 600px;
             position: relative;
@@ -70,6 +65,14 @@
             left: 55%;
             z-index: 1;
             width: 450px;
+        }
+        @include devices("tablet") {
+            flex-basis: 100%;
+            order: 2;
+            margin-top: 30px;
+            .imgAnimation {
+                width: 270px;
+            }
         }
     }
 }

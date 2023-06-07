@@ -28,6 +28,9 @@
 
     &__info {
         flex: 1;
+        @include devices("tablet") {
+            padding-inline: 10px;
+        }
         &--title {
             color: $whiteColor;
             font-size: 55px;
