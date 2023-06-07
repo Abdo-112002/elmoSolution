@@ -31,11 +31,11 @@ function ParallaxText({ children, baseVelocity = 100 }) {
         clamp: false,
     });
 
-    const x = useTransform(baseX, (v) => `${wrap(0, -45, v)}%`);
+    const x = useTransform(baseX, (v) => `${wrap(30, -45, v)}%`);
 
     const directionFactor = useRef(1);
     useAnimationFrame((t, delta) => {
-        let moveBy = directionFactor.current * baseVelocity * (delta / 1200);
+        let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
         if (velocityFactor.get() < 0) {
             directionFactor.current = -1;
@@ -73,6 +73,7 @@ export default function OurTechnology() {
                     <img className="w-20" src={htmlIcon} alt="Technology" />
                     <img className="w-20" src={cIcon} alt="Technology" />
                     <img className="w-20" src={pythonIcon} alt="Technology" />
+                    
                     <img className="w-20" src={htmlIcon} alt="Technology" />
                     <img className="w-20" src={cIcon} alt="Technology" />
                     <img className="w-20" src={pythonIcon} alt="Technology" />
@@ -89,6 +90,7 @@ export default function OurTechnology() {
                     <img className="w-20" src={phpIcon} alt="Technology" />
                     <img className="w-20" src={sqlIcon} alt="Technology" />
                     <img className="w-20" src={javaIcon} alt="Technology" />
+
                     <img className="w-20" src={cssIcon} alt="Technology" />
                     <img className="w-20" src={phpIcon} alt="Technology" />
                     <img className="w-20" src={sqlIcon} alt="Technology" />
