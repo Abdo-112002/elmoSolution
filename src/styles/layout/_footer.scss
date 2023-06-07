@@ -29,6 +29,10 @@
             justify-content: center;
             color: $mainColor;
             cursor: pointer;
+            transition: 200ms ease-in-out;
+            &:hover {
+                transform: translateY(10px);
+            }
         }
         &--list {
             font-size: 15px;

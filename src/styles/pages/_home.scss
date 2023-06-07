@@ -57,7 +57,7 @@
         }
 
         &--btn {
-            background: linear-gradient(to right, $mainColor, #753536);
+            background: $blackColor;
             padding: 15px 45px;
             border-radius: 15px;
             color: $secondBgColor;
@@ -76,7 +76,7 @@
                 height: 50%;
                 background: linear-gradient(to right, $mainColor, #753536);
                 z-index: -1;
-                transition: 300ms ease-in-out;
+                transition: all 300ms ease-in-out;
             }
             &::after {
                 bottom: 0;

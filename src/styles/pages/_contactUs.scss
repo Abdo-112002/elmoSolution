@@ -1,0 +1,72 @@
+.contactUs {
+    &__wrapper {
+        width: 100%;
+        @include bg-img("../../../public/images/contact-shape.png");
+        background-position: center;
+        background-size: contain;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        padding-right: 100px;
+        &--title {
+            text-transform: capitalize;
+            font-size: clamp(40px, 4vw, 50px);
+            font-weight: 600;
+            line-height: 1.1;
+            padding-left: 40px;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 5px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background-color: $mainColor;
+            }
+        }
+        &--item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            &--icon {
+                font-size: 40px;
+                color: $mainColor;
+            }
+            &--text {
+                text-transform: capitalize;
+                h2 {
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                p {
+                    color: $textColor;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    &__form {
+        border-radius: 10px;
+        box-shadow: 0px 0px 139px 0px rgba(0, 0, 0, 0.1);
+        background-color: $whiteColor;
+        padding: 30px 20px;
+        &--btnSend {
+            margin-top: 10px !important;
+            border-radius: 7px !important;
+            background: $blackColor !important;
+            &::after,
+            &::before {
+                background: linear-gradient(
+                    to right,
+                    $mainColor,
+                    royalblue
+                ) !important;
+            }
+        }
+    }
+}

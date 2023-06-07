@@ -5,6 +5,7 @@ import {
     Services,
     OurTechnology,
     Footer,
+    ContactUs,
 } from "../components";
 
 function Home() {
@@ -18,7 +19,8 @@ function Home() {
             <Services />
             {/* OurTechnology section */}
             <OurTechnology />
-
+            {/* contact section */}
+            <ContactUs />
             {/* Footer section */}
             <Footer />
         </Box>
