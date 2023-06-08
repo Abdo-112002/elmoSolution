@@ -1,4 +1,3 @@
-import React from "react";
 import { services4, services3, services2, services1 } from "../assets";
 
 function Services() {
@@ -17,6 +16,7 @@ function Services() {
                     <div
                         data-aos="fade-up"
                         data-aos-delay="100"
+                        data-aos-duration="200"
                         className="services__item"
                     >
                         <div className="services__item--icon">
@@ -31,6 +31,7 @@ function Services() {
                     <div
                         data-aos="fade-up"
                         data-aos-delay="200"
+                        data-aos-duration="200"
                         className="services__item"
                     >
                         <div className="services__item--icon">
@@ -45,6 +46,7 @@ function Services() {
                     <div
                         data-aos="fade-up"
                         data-aos-delay="300"
+                        data-aos-duration="200"
                         className="services__item"
                     >
                         <div className="services__item--icon">
@@ -61,6 +63,7 @@ function Services() {
                     <div
                         data-aos="fade-up"
                         data-aos-delay="400"
+                        data-aos-duration="200"
                         className="services__item"
                     >
                         <div className="services__item--icon">

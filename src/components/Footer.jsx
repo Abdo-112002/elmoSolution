@@ -33,7 +33,7 @@ function Footer() {
                     </div>
                     <div className="footer__item">
                         <div className="text-left">
-                            <h3 className="font-bold capitalize text-lg mb-5">
+                            <h3 className="footer__item--title font-bold capitalize text-lg mb-5">
                                 Useful Links
                             </h3>
                             <ul className="footer__item--list">
@@ -46,7 +46,7 @@ function Footer() {
                     </div>
                     <div className="footer__item">
                         <div className="text-left">
-                            <h3 className="font-bold capitalize text-lg mb-5">
+                            <h3 className="footer__item--title font-bold capitalize text-lg mb-5">
                                 Our Services
                             </h3>
                             <ul className="footer__item--list">
@@ -59,7 +59,7 @@ function Footer() {
                     </div>
                     <div className="footer__item">
                         <div className="text-left">
-                            <h3 className="font-bold capitalize text-lg mb-5">
+                            <h3 className="font-bold capitalize text-lg mb-5 footer__item--title">
                                 Contact Information
                             </h3>
                             <ul className="footer__item--list">

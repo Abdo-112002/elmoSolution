@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
     @include bg-img("/images/footer-bg3.jpg");
+    // @include overlay(-1, $blackColor, 0.3);
     @include devices("tablet") {
         padding-top: 50px;
     }
@@ -14,10 +15,14 @@
             justify-content: start;
             padding-block: 0px;
         }
+        &--title {
+            color: $blackColor;
+        }
         &--text {
             font-size: 15px;
             font-weight: 400;
             text-transform: none;
+            color: $textColor;
         }
         &--socialLinks {
             background-color: $whiteColor;
@@ -40,7 +45,7 @@
             li {
                 margin-bottom: 10px;
                 transition: 200ms ease-in;
-                color: $blackColor;
+                color: $textColor;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
@@ -60,5 +65,6 @@
         background-color: transparent;
         border-top: 2px solid $whiteColor;
         text-align: center;
+        color: $blackColor;
     }
 }

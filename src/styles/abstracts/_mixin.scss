@@ -22,24 +22,23 @@
     }
 }
 
+@mixin devices($breakpoint) {
+    //the name of the mixin is devices
 
-@mixin devices ($breakpoint) { //the name of the mixin is devices
-  
-    @if $breakpoint == tablet {    
-       @media only screen and (max-width: 757px) {
-          @content;
-       }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 757px) {
+            @content;
+        }
     }
- 
+
     @if $breakpoint == mobile {
-       @media only screen and (max-width: 575px) {
-          @content;
-       }
+        @media only screen and (max-width: 575px) {
+            @content;
+        }
     }
 }
 
-
-@mixin bg-img($url,$fixed : false) {
+@mixin bg-img($url, $fixed: false) {
     background: url($url) no-repeat;
     background-position: center;
     background-size: cover;
@@ -58,16 +57,14 @@
     z-index: $z-index;
 }
 
-;
 // property prefixes
 @mixin prefixes($property, $value, $prefixes-list) {
     @each $prefix in $prefixes-list {
         -#{$prefix}-#{$property}: $value;
     }
-    #{$property}:$value;
+    #{$property}: $value;
 }
 
-;
 // reSetting a(anchor)
 @mixin reSetting-a($size, $color) {
     text-decoration: none;
@@ -76,17 +73,14 @@
     color: $color;
 }
 
-
 // animation key with prefixes
 @mixin keyAnimation($keyName) {
     @each $prefix in $prefixes-list {
         -#{$prefix}-keyframes #{$keyName} {
             @content;
-        };
-    };
-    @keyframes #{$keyName}{
+        }
+    }
+    @keyframes #{$keyName} {
         @content;
-    };
-};
-
-
+    }
+}

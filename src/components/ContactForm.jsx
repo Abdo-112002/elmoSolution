@@ -11,7 +11,7 @@ function ContactForm() {
     return (
         <>
             <Flex flexDir={"column"} gap={"20px"}>
-                <div className="flex items-center gap-5 sm:flex-col md:flex-row">
+                <div className="flex items-center gap-5 flex-col sm:flex-col md:flex-row">
                     <FormControl isRequired>
                         <FormLabel>First name</FormLabel>
                         <Input placeholder="First name" />

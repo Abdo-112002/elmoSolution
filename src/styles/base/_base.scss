@@ -12,21 +12,19 @@ body {
     position: relative;
     font-family: $main-font1 !important;
     overflow-x: hidden !important;
-    @apply bg-white dark:bg-gray-900 text-black dark:text-white;
 }
 
-// Dark mode styles
-.dark-mode {
-    @apply bg-gray-900 text-white;
+body.theme-mode.dark-mode {
+    background: $darkBgColor;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 html::selection {
     color: $secondBgColor;
-    background: $mainHeaderColor;
 }
 
 ul {
@@ -36,7 +34,7 @@ ul {
 }
 
 a {
-    @include reSetting-a(15px, $mainHeaderColor);
+    @include reSetting-a(15px, $mainColor);
 }
 
 p {
@@ -76,6 +74,9 @@ p {
     margin-right: 30px;
 }
 
+.css-g6pte {
+    color: $blackColor;
+}
 .css-1tfjd1n {
     color: $mainColor !important;
 }

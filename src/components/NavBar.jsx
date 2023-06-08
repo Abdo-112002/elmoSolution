@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Logo } from "../reUseComponents";
 import { logoImg, amirican, italy } from "../assets";
 import { useTranslation } from "react-i18next";
@@ -13,7 +13,22 @@ import { VscListSelection } from "react-icons/vsc";
 function NavBar() {
     const [t, i18n] = useTranslation();
     const dispatch = useDispatch();
+    const [isDarkMode, setIsDarkMode] = useState(false);
     const { toggleLang, toggleNav } = useSelector((state) => state.toggleMode);
+
+    // toggle dark or light mode
+    const handleToggleMode = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+
+    useEffect(() => {
+        const htmlElement = document.querySelector("body");
+        if (isDarkMode) {
+            htmlElement.classList.add("dark-mode");
+        } else {
+            htmlElement.classList.remove("dark-mode");
+        }
+    }, [isDarkMode]);
 
     // for framer motion animations
     const [navStyle, setNavStyle] = useState({
@@ -21,10 +36,12 @@ function NavBar() {
         animate: {},
     });
 
+    // toggle navigation
     const toggleMenu = () => {
         dispatch(toggleNavFun());
     };
 
+    // toggle language
     const toggleLanguage = useCallback(
         (language) => {
             dispatch(toggleLangFun(language));

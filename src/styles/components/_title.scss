@@ -9,5 +9,9 @@
             display: block;
             color: $mainColor;
         }
+
+        @include devices("tablet") {
+            font-size: 25px;
+        }
     }
 }

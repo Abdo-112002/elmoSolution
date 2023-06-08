@@ -11,11 +11,19 @@ function ContactUs() {
                 <div className="contactUs__wrapper">
                     <div className="flex items-start justify-between gap-7 md:gap-0 flex-wrap">
                         <div className="contactUs__info sm:w-full md:w-1/2">
-                            <h2 className="contactUs__info--title">
+                            <h2
+                                data-aos="fade-up-right"
+                                data-aos-delay="100"
+                                className="contactUs__info--title"
+                            >
                                 To make requests for further information,
                                 contact us
                             </h2>
-                            <div className="contactUs__info--item">
+                            <div
+                                data-aos="fade-up-right"
+                                data-aos-delay="300"
+                                className="contactUs__info--item"
+                            >
                                 <div className="contactUs__info--item--icon">
                                     <FiPhoneCall />
                                 </div>
@@ -24,7 +32,11 @@ function ContactUs() {
                                     <p>+00(1) 123 456 7890</p>
                                 </div>
                             </div>
-                            <div className="contactUs__info--item">
+                            <div
+                                data-aos="fade-up-right"
+                                data-aos-delay="400"
+                                className="contactUs__info--item"
+                            >
                                 <div className="contactUs__info--item--icon">
                                     <FaRegEnvelopeOpen />
                                 </div>
@@ -33,7 +45,11 @@ function ContactUs() {
                                     <p>infotechmax@ourmail.com</p>
                                 </div>
                             </div>
-                            <div className="contactUs__info--item">
+                            <div
+                                data-aos="fade-up-right"
+                                data-aos-delay="500"
+                                className="contactUs__info--item"
+                            >
                                 <div className="contactUs__info--item--icon">
                                     <GoLocation />
                                 </div>
@@ -47,7 +63,11 @@ function ContactUs() {
                                 </div>
                             </div>
                         </div>
-                        <div className="contactUs__form sm:w-full md:w-1/2">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="350"
+                            className="contactUs__form w-full sm:w-full md:w-1/2"
+                        >
                             <div className="baseTitle mb-10">
                                 <h2
                                     data-subtitle="send us message"

@@ -1,5 +1,6 @@
 // import abstracts file
-@import "./abstracts/vars", "./abstracts/mixin", "./abstracts/functions";
+@import "./abstracts/globalVars", "./abstracts/lightVars", "./abstracts/mixin",
+    "./abstracts/functions";
 
 // import base fils
 @import "./base/base", "./base/helper";
